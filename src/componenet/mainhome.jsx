@@ -13,14 +13,17 @@ const mainhome = () => {
  <h1 className="text-gray-500 ">
  This board is empty. Create a new column to get started.
  </h1>
-            <Link className={`btn text-white border-none
+            <Link
+             to="/sitebarPlatform"
+            className={`btn text-white border-none
      w-[170px] h-[45px] bg-[#635FC7] rounded-full`}>
             + Add New Column
             </Link>
  </div>
         </div>
 
-  <NavLink className={({isActive})=> isActive ? 'hidden' : 'block'} to="/">
+  <NavLink className={({isActive})=> isActive ? 'hidden'
+   : 'block'} to="/">
 <div className=" rounded-r-full 
 bg-[#635FC7] flex justify-center items-center text-white
  -mt-[50px] w-[50px] h-[40px]">

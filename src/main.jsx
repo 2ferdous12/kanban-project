@@ -5,7 +5,9 @@ import './index.css'
 import Home from './componenet/home';
 import Mainhome from './componenet/mainhome';
 import Sitebar from './componenet/sitebar';
-
+import SitebarPlatform from './componenet/sitebarPlatform';
+import Platform from './componenet/platform';
+import Modaltry from './componenet/modaltry';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,6 +29,19 @@ const router = createBrowserRouter([
       {
         path: "/sitebar",
         element: <Sitebar></Sitebar>
+      },
+  
+      {
+        path: "/sitebarPlatform",
+        element: <SitebarPlatform></SitebarPlatform>
+      },
+      {
+        path: "/platform",
+        element: <Platform></Platform>
+      },
+      {
+        path: "/modaltry",
+        element: <Modaltry></Modaltry>
       }
   
   
